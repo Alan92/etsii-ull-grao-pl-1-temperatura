@@ -3,7 +3,7 @@ function calculate() {
   var result;
   var original = document.getElementById("original");
   var temp = original.value;
-  var regexp = /(-[0-9]+|[0-9]+)(\s*|\.)([0-9]*)(C|F|c|f)/;
+  var regexp = /^(-[0-9]+|[0-9]+)(\s*|\.)([0-9]*)(C|F|c|f)$/;
   var m = temp.match(regexp);
   if (m) {
     var num = m[1]+m[2]+m[3];
